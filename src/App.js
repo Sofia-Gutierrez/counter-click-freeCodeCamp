@@ -2,7 +2,7 @@ import "./assets/css/App.css";
 import { useState } from "react";
 import Button from "./components/Button";
 import Counter from "./components/Counter";
-import freeCodeCampLogo from "./assets/img/freecodecamp-logo.png";
+import FreeCodeCampLogo from "./components/FreeCodeCampLogo";
 
 function App() {
 
@@ -18,13 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="freecodecamp-logo-container">
-        <img 
-          className="freecodecamp-logo"
-          src={freeCodeCampLogo}
-          alt="Logo de freeCodeCamp" />
-      </div>
-      <div className="counter-container">
+      <FreeCodeCampLogo />
+      <div className="container-counter">
         <Counter clickNumber={clickNumber} />
         <div className="buttons-container">
           <Button text="Click" isClickButton={true} handleClick={handleClick} />

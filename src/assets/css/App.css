@@ -1,3 +1,15 @@
+:root {
+    --green: #a2ac6e;
+    --dark-green: #03750c;
+    --gray: #cac8b0;
+    --wheat: #edebd7;
+    --blue: #001736;
+    --dark-cyan: #104377;
+    --dark-red: #7C0202; 
+    --yellow: #FEE06E;
+    --dark-yellow: #E6C95A; 
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +29,9 @@ html, body {
     font-family: Lato, "sans-serif";
 }
 
-.freecodecamp-logo-container {
+/* freeCodeCamp Logo */
+
+.container-freecodecamp-logo {
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,10 +40,12 @@ html, body {
 }
 
 .freecodecamp-logo {
-    height: 50px;
+    height: 35px;
 }
 
-.counter-container {
+   /* Click Counter */
+
+.container-counter {
     height: 550px;
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +56,16 @@ html, body {
 
 
 @media (min-width: 768px) {
-    .counter-container {
+
+    /* freeCodeCamp Logo */
+
+    .freecodecamp-logo {
+        height: 50px;
+    }
+
+    /* Click Counter */
+
+    .container-counter {
         height: 550px;
         min-width: 600px;
     }

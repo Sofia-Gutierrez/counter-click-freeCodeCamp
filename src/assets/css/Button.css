@@ -10,14 +10,16 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #00471b;
-}
 
 .click-button {
-    background-color: #002ead;
+    background-color: var(--green);
+}
+
+button:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
 }
 
 .reset-button {
-    background-color: #5a01a7;
+    background-color: var(--dark-red);
 }
